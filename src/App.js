@@ -1,15 +1,10 @@
-import logo from "./assets/img/rust-logo.jpg";
-import "./App.css";
-import { Link } from "react-router-dom";
+import Router from "./routes/main.js";
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Link to="/servers">
-          <img src={logo} className="App-logo" alt="logo" />
-        </Link>
-      </header>
+    <div>
+      <Router />;
     </div>
   );
 }

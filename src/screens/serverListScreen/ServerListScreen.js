@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import logo from "../../assets/img/rust-logo.jpg";
+import { Link } from "react-router-dom";
 
 const ServerListScreen = () => {
   return (
-    <div>ServerListScreen</div>
-  )
-}
+    <header>
+      <Link to="/">
+        <img src={logo} alt="logo" />
+      </Link>
+    </header>
+  );
+};
 
-export default ServerListScreen
+export default ServerListScreen;

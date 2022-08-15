@@ -1,0 +1,50 @@
+  .logo {
+    height: 30vmin;
+    pointer-events: none;
+    margin-bottom: 20%;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .screen {
+    background-color: #1E2020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .clignote {
+    color: white;
+    animation: clignote 1s infinite;
+    font-size: large;
+}
+
+@keyframes clignote {
+    50% { opacity: 0;}
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
