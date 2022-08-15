@@ -1,14 +1,36 @@
-.body {
+.screen {   
     background-color: #1E2020;
 }
 
-.header {
-    height: 10%;
+.body {
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
     width: 100%;
 }
 
-.logoRust {
-    height: 8%;
-    width: 8%;
-    margin: 0.2rem;
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    width: 50rem;
+}
+
+.color {
+    background-color: #C33F29;
+}
+
+.title {
+    color: white;
+}
+
+.bgcolor {
+ background-color: white    ;
 }
