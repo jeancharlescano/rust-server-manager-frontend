@@ -1,9 +1,6 @@
-.screen {   
-    background-color: #1E2020;
-}
-
-.body {
-    flex-direction: column;
+.screen {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -20,7 +17,7 @@ table {
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
-    width: 50rem;
+    margin: 0px 20vh;
 }
 
 .color {

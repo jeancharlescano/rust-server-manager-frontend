@@ -1,29 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./ServerListScreen.module.scss";
 import HeaderComponent from "../../components/headerComponent/HeaderComponent";
 import { getAllServers } from "../../utilities/serverRequest";
 
 const ServerListScreen = () => {
-  let servers = [];
+  const [servers, setServers] = useState([]);
 
   const getServers = async () => {
     const data = await getAllServers();
-    servers = data;
+    setServers(data.data);
+    console.log(
+      "🚀 ~ file: ServerListScreen.js ~ line 8 ~ ServerListScreen ~ servers",
+      servers
+    );
   };
 
   const loadServers = () => {
-    // for (const server of servers) {
-    //   return (
-    //     <tr>
-    //       <th>{server.id}</th>
-    //       <th>{server.name}</th>
-    //       <th>{server.max_player}</th>
-    //       <th>{server.wipe_type}</th>
-    //       <th>{server.wipe_day}</th>
-    //     </tr>
-    //   );
-    // }
-
     return servers.map((server) => (
       <tr>
         <th>{server.id}</th>
@@ -34,15 +26,16 @@ const ServerListScreen = () => {
       </tr>
     ));
   };
+
   useEffect(() => {
     getServers();
   }, []);
 
   return (
-    <div className={styles.screen}>
+    <div>
       <HeaderComponent />
-      <div className={styles.container}>
-        <div className={styles.table}>
+      <div className={styles.screen}>
+        <div className={styles.container}>
           <table>
             <thead className={styles.color}>
               <tr className={styles.title}>
