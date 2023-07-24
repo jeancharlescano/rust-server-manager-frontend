@@ -1,0 +1,84 @@
+.main {
+  height: calc(100vh - 56px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 50%;
+  width: 25%;
+  background-color: rgba(128, 128, 128, 0.24);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.inputContainer {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.labelText {
+  color: #fff;
+  font-weight: 400;
+  font-size: large;
+}
+.inputText {
+  width: 65%;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 0.5px solid grey;
+  height: 30px;
+  padding: 5px;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button {
+  -o-appearance: none;
+  margin: 0;
+}
+
+.btn {
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    background-color: #CE422B;
+    color: #fff;
+    font-weight: 600;
+    font-size: medium;
+    align-self: center;
+    height: 40px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid #CE422B
+}

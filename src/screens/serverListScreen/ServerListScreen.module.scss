@@ -1,33 +1,41 @@
 .screen {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
 }
 
-
 table {
-    border-collapse: collapse;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
-    margin: 0px 20vh;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0px 20vh;
 }
 
 .color {
-    background-color: #C33F29;
+  background-color: #c33f29;
 }
 
 .title {
-    color: white;
+  color: white;
 }
 
 .bgcolor {
- background-color: white    ;
+  background-color: rgba(128, 128, 128, 0.24);
+  color: white;
+}
+
+.tableContent {
+  font-weight: lighter;
+}
+
+.deleteBtn {
+  cursor: pointer;
 }
